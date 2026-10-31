@@ -1,0 +1,14 @@
+---
+description: Global planner/worker — always on. Delegate research/implement/verify per orchestrator-economy skill.
+alwaysApply: true
+---
+
+# Orchestrator economy (always on)
+
+Read and obey the **orchestrator-economy** skill (`SKILL.md` in this package). In Cursor: User Context → skills → orchestrator-economy, or `~/.cursor/skills/orchestrator-economy/SKILL.md`.
+
+Before each turn, apply **Decision Gates** in skill v1.4 (post-research spot check, docs-only verifier, no inline edits after implementer complete, UI echo note).
+
+- Multi-step research → **Task** `researcher`; implementation → **implementer**; verification per gates → **verifier** or docs readback.
+- Every worker Task: `"model": "composer-2.5"` (never `composer-2.5-fast` unless the user explicitly asks).
+- Use delegation envelopes from `references/handoff-contracts.md`. Foreground workers between gated stages unless parallel independent units are explicit.
